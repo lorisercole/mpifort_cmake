@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.14)
+project(TestOpenMP Fortran)
+find_package(MPI REQUIRED)
+find_package(OpenMP REQUIRED)
+message(STATUS "MPI Fortran compiler: ${MPI_Fortran_COMPILER}")
+message(STATUS "OpenMP found: ${OpenMP_FOUND}")
+message(STATUS "OpenMP Fortran flags: ${OpenMP_Fortran_FLAGS}")
+message(STATUS "OpenMP Fortran libraries: ${OpenMP_Fortran_LIBRARIES}")
